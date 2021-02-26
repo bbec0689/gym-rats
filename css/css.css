@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+.btn-awesome {
+  font-family: Granite;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 20px;
+}
+.btn-awesome:hover {
+  color: maroon;
+}
+@font-face {
+  font-family: Granite;
+  src: url("../Granite-Bgvl.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 10px;
+  margin-right: 70px;
+  border: none;
+  text-align: center;
+  outline: none;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  background-color: maroon;
+  border-radius: 0;
+}
+.container {
+  margin-right: 450px;
+  margin-left: 450px;
+}
+.container p {
+  text-align: center;
+}
+.loginFont {
+  font-family: Granite;
+  margin-bottom: 100px;
+  color: maroon;
+}
+.containerRight {
+  margin-top: 250px;
+}
+.containerRight h1 {
+  text-align: center;
+  font-size: 80px;
+}
+img {
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: right 0;
+  z-index: 9;
+}
+footer {
+  margin-top: 240px;
+  margin-right: 120px;
+}
+.forgotBtn {
+  color: white;
+  background-color: maroon;
+  justify-content: center;
+}
+.signUpForm {
+  margin-top: 300px;
+}
+.signup {
+  color: white;
+}
+.signup:hover {
+  color: black;
+}
+.card {
+  margin-top: 270px;
+}
