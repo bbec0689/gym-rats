@@ -1,0 +1,46 @@
+<div class="dashboard">
+    <section>
+        <h2>Create New Blog Post</h2>
+
+        <form class="new-post-form">
+            <div>
+                <label for="post-title">Post Title</label>
+                <input type="text" id="post-title" name="post-title" />
+            </div>
+            <div>
+                <label for="post-time">Post Time</label>
+                <input type="text" id="post-time" name="post-time" />
+            </div>
+            <div>
+                <label for="post-url">Post URL</label>
+                <input type="text" id="post-url" name="post-url" />
+            </div>
+            <div>
+                <label for="post-category">Post Category</label>
+                <input type="text" id="post-category" name="post-category" />
+            </div>
+            <div>
+                <label for="post-body">Post Body</label>
+                <textarea class="post-body" id="post-body" name="post-body"></textarea>
+            </div>
+            <button type="submit" class="btn">Create</button>
+        </form>
+    </section>
+    <br>
+
+    {{#if posts.length}}
+    <div>
+        <h2>Your Blog Posts</h2>
+        <section>
+            {{#each posts as | post |}}
+            <div class="dashboard-posts">
+                {{> post-info post }}
+                <br>
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            </div>
+            {{/each}}
+        </section>
+        {{/if}}
+    </div>
+
+    <script src="/javascript/add-post.js"></script>
