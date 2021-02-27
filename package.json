@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "gym-rats",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbec0689/gym-rats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbec0689/gym-rats/issues"
+  },
+  "homepage": "https://github.com/bbec0689/gym-rats#readme"
+}
