@@ -35,8 +35,8 @@ body {
   border-radius: 0;
 }
 .container {
-  margin-right: 450px;
-  margin-left: 450px;
+  margin: 150px 250px 45px 400px;
+  position: absolute;
 }
 .container p {
   text-align: center;
@@ -68,8 +68,12 @@ footer {
   margin-right: 120px;
 }
 .forgotBtn {
-  color: white;
-  background-color: maroon;
+  color: black;
+  justify-content: center;
+  margin-top: 315px;
+  margin-right: 90px;
+}
+.forgotPass {
   justify-content: center;
 }
 .signUpForm {
@@ -86,4 +90,12 @@ footer {
 }
 .cardPost {
   margin: 0 auto;
+}
+@media screen and (max-width: 769px) {
+  .containerRight {
+    margin-left: 15px;
+  }
+  .loginImg {
+    visibility: hidden;
+  }
 }
