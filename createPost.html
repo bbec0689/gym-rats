@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="style.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet/less" type="text/css" href="less/css.less" />
     <script src="less.js" type="text/javascript"></script>
 
-
-    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <header>
@@ -24,24 +27,55 @@
 
 
 <body>
-    <div class="card text-center">
-        <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+    <div class="form-gap"></div>
+    <div class="container2 card cardPost h-100 row align-items-center">
+
+        <div class="row justify-content-center">
+            <div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        
+                        <div class="text-center">
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class=" text-center">General</a></li>
+                                    <li><a href="#" class=" text-center">Cardio</a></li>
+                                    <li><a href="#"  class=" text-center">Weight Lifting</a></li>
+                                    <li><a href="#" class=" text-center">Calisthenics</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <h1 class="text-center loginFont">Create Post</h1>
+
+                        <div class="panel-body">
+        
+                        <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+        
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon"></i></span>
+                                    <textarea id="" class="postArea form-control" rows="10" name="email" placeholder="Type your post here..." class="form-control"  type="email"></textarea>
+                                </div></br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon"></i>Youtube Link:</span>
+                                    <input id="" name="youtubeLink" placeholder="Post your video link here..." class="form-control"  type="email">
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="#" name="submit" class="btn btn-lg btn-primary btn-block forgotPass" value="Post" type="submit">Post</a>
+                            </div>
+                        
+                            <input type="hidden" class="hide" name="token" id="token" value=""> 
+                        </form>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

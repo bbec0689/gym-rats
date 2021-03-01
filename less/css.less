@@ -32,6 +32,10 @@ padding: 0;
 background-color: lightgray;
 }
 
+h1 {
+    font-size: 60px;
+}
+
 .btn {
 text-transform: uppercase;
 padding: 10px;
@@ -44,17 +48,28 @@ display: flex;
 justify-content: space-between;
 }
 
+.homeBtn {
+    margin-left: 40px;
+}
+
 
 
 .nav-bar {
     background-color: maroon;
     border-radius: 0;
-    
     }
     
 
     .container {
-        margin: 150px 250px 45px 400px;
+        margin: 260px 250px 45px 400px;
+        position: absolute;
+        p {
+            text-align: center;
+        }
+    }
+
+    .container2 {
+        margin: 100px 250px 45px 400px;
         position: absolute;
         p {
             text-align: center;
@@ -65,6 +80,11 @@ justify-content: space-between;
 
 //Login and forgot password page start
 
+.logo {
+    margin-top: -95px;
+    margin-left: -25px;
+}
+
 .loginFont {
 font-family: Granite;
 margin-bottom: 100px;
@@ -72,14 +92,14 @@ color: @link-color;
 }
 
 .containerRight {
-margin-top: 250px;
+
     h1 {
     text-align: center;
     font-size: 80px;
     }
 }
 
-img {
+.loginImg {
 position: absolute;
 height: 100vh;
 width: 50%;
@@ -96,18 +116,13 @@ margin-right: 120px;
 }
 
 .forgotBtn {
-    color: black;
-    justify-content: center;
-    margin-top: 315px;
-    margin-right: 90px;
+    margin-left: 45px;
+
 }
 
 .forgotPass {
     justify-content: center;
-}
-
-.signUpForm {
-    margin-top: 300px;
+    background-color: @link-color;
 }
 
 // Sign up form start
@@ -117,19 +132,17 @@ margin-right: 120px;
     &:hover {
     color: black;
     }
-    }
-
-.card {
-    margin-top: 270px;
 }
+
 
 // Sign up form end
 
 // Create Post Form start
 
-.cardPost {
-    margin: 0 auto;
+.postArea {
     
+    font-size:14pt;
+    width: 100%;
 }
 
 @media screen and (max-width: 769px) {
@@ -141,3 +154,16 @@ margin-right: 120px;
     }
 }
 
+// Post feed page
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.nav-item {
+    margin-bottom: 0px;
+}
