@@ -22,7 +22,12 @@ body {
 h1 {
   font-size: 60px;
 }
-.btn {
+.btnCat {
+  background-color: maroon;
+  color: white;
+  margin-top: 10px;
+}
+.btn2 {
   text-transform: uppercase;
   padding: 10px;
   margin-right: 70px;
@@ -98,14 +103,6 @@ footer {
   font-size: 14pt;
   width: 100%;
 }
-@media screen and (max-width: 769px) {
-  .containerRight {
-    margin-left: 15px;
-  }
-  .loginImg {
-    visibility: hidden;
-  }
-}
 .avatar {
   vertical-align: middle;
   width: 50px;
@@ -114,4 +111,49 @@ footer {
 }
 .nav-item {
   margin-bottom: 0px;
+}
+.backgroundContainer {
+  margin: 10px 250px 450px 400px;
+  position: fixed;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 8px #888888;
+  width: 1000px;
+  vertical-align: middle;
+  background-color: black;
+}
+.postContainer {
+  background-color: white;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  line-height: 150%;
+  border: 1px solid;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 3px 8px #888888;
+  padding: 20px;
+}
+.postContainer .catClass {
+  color: maroon;
+  font-family: Granite;
+}
+.postContainer .postBox {
+  border: 3px solid darkgray;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.postContainer .yLink {
+  border: 3px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+@media screen and (max-width: 769px) {
+  .containerRight {
+    margin-left: 15px;
+  }
+  .loginImg {
+    visibility: hidden;
+  }
 }
