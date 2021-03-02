@@ -115,3 +115,9 @@ footer {
 .nav-item {
   margin-bottom: 0px;
 }
+
+@media screen and (max-width: 575px) {
+  .d-flex {
+    margin-right: 15px;
+  }
+}
