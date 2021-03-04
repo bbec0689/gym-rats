@@ -1,0 +1,56 @@
+{{!-- <div class="form-style">
+    <form class="login-form">
+        <h2>Login</h2>
+        <div>
+            <label for="email-login">email:</label>
+            <input type="text" id="email-login" />
+        </div>
+        <div>
+            <label for="password-login">password:</label>
+            <input type="password" id="password-login" />
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <a href="/signup">Sign-Up</a>
+        <a href="/reset-password">Reset Password</a>
+    </form>
+</div> --}}
+<div class="">
+    <!--Creating the jumbotron-->
+    <div class="d-flex justify-content-start">
+        <img class="loginImg" src="photo/upper-body-workout.jpg"></img>
+    </div>
+
+    <!-- Adding the form section to login -->
+    <div class="d-flex justify-content-end containerRight container">
+        <div class="d-flex flex-sm-column bd-highlight">
+            <h1 class="loginFont">Gym Rats</h1>
+            <form class="login-form">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                        <input id="email" name="email" placeholder="Email Address" class="form-control" type="email">
+                    </div></br>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" id="password-login" class="form-control" id="exampleInputPassword1"
+                            placeholder="Password">
+                    </div></br>
+                    <div class="d-flex">
+                        {{!-- <a href="/dashboard" type="submit" class="btn2 btn-awesome">Login</a> --}}
+                        <button class="btn2 btn-awesome login-button" type="submit">Login</button>
+                        <a href="/reset-password" class="btn btn2 btn-awesome forgotBtn">Forgot Password?</a>
+                    </div>
+
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/login.js"></script>

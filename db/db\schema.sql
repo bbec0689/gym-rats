@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS  gym_rats;
-
-CREATE DATABASE  gym_rats;

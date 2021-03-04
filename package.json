@@ -1,27 +1,35 @@
 {
+  "name": "gym_rat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
+    "bcrypt": "^3.0.8",
+    "connect-session": "0.0.1",
+    "connect-session-sequelize": "^7.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "handlebars": "^4.7.7",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0"
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "heroku": "^7.42.6",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3"
   },
+  "devDependencies": {},
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "name": "gym-rats",
-  "description": "",
-  "version": "1.0.0",
-  "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbec0689/gym-rats.git"
+    "url": "git+https://github.com/ZFarnworth/tech_blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bbec0689/gym-rats/issues"
+    "url": "https://github.com/ZFarnworth/tech_blog/issues"
   },
-  "homepage": "https://github.com/bbec0689/gym-rats#readme"
+  "homepage": "https://github.com/ZFarnworth/tech_blog#readme"
 }
