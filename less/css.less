@@ -9,10 +9,12 @@
     .button-creator(@link-color);
     }
 
+
 @font-face {
 font-family: Granite;
 src: url("../Granite-Bgvl.ttf");
 }
+
 
 .button-creator(@color) {
     font-family: Granite;
@@ -32,7 +34,17 @@ padding: 0;
 background-color: lightgray;
 }
 
-.btn {
+h1 {
+    font-size: 60px;
+}
+
+.btnCat {
+    background-color: @link-color;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn2 {
 text-transform: uppercase;
 padding: 10px;
 margin-right: 70px;
@@ -44,6 +56,14 @@ display: flex;
 justify-content: space-between;
 }
 
+.voteBtns {
+    
+}
+
+.homeBtn {
+    margin-left: 40px;
+}
+
 
 
 .nav-bar {
@@ -53,8 +73,16 @@ justify-content: space-between;
     
 
     .container {
-        margin-right: 450px;
-        margin-left: 450px;
+        margin: 260px 250px 45px 400px;
+        position: absolute;
+        p {
+            text-align: center;
+        }
+    }
+
+    .container2 {
+        margin: 100px 250px 45px 400px;
+        position: absolute;
         p {
             text-align: center;
         }
@@ -64,6 +92,11 @@ justify-content: space-between;
 
 //Login and forgot password page start
 
+.logo {
+    margin-top: -95px;
+    margin-left: -25px;
+}
+
 .loginFont {
 font-family: Granite;
 margin-bottom: 100px;
@@ -71,14 +104,14 @@ color: @link-color;
 }
 
 .containerRight {
-margin-top: 250px;
+
     h1 {
     text-align: center;
     font-size: 80px;
     }
 }
 
-img {
+.loginImg {
 position: absolute;
 height: 100vh;
 width: 50%;
@@ -95,13 +128,13 @@ margin-right: 120px;
 }
 
 .forgotBtn {
-    color: white;
-    background-color: maroon;
-    justify-content: center;
+    margin-left: 45px;
+
 }
 
-.signUpForm {
-    margin-top: 300px;
+.forgotPass {
+    justify-content: center;
+    background-color: @link-color;
 }
 
 // Sign up form start
@@ -111,8 +144,83 @@ margin-right: 120px;
     &:hover {
     color: black;
     }
+}
+
+
+// Sign up form end
+
+// Create Post Form start
+
+.postArea {
+    font-size:14pt;
+    width: 100%;
+}
+
+
+// Post feed page
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.nav-item {
+    margin-bottom: 0px;
+}
+
+
+.backgroundContainer {
+    margin: 10px 250px 450px 400px;
+    position: fixed;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 8px #888888;
+    width: 1120px;
+    vertical-align: middle;
+    background-color: black;
+
+}
+    .postContainer {
+        background-color: white;
+        margin-top: 10px;
+        padding-bottom: 30px;
+        line-height: 150%;
+        border: 1px solid;
+        border-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        box-shadow: 3px 8px #888888;
+        padding: 20px;
+            .catClass {
+                color: @link-color;
+                font-family: Granite;
+            }
+                .postBox {
+                    border: 3px solid darkgray;
+                    border-radius: 5px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+                    .yLink {
+                        border: 3px solid darkgray;
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                    .btnArrowUp {
+
+                    }
     }
 
-.card {
-    margin-top: 270px;
+
+
+@media screen and (max-width: 769px) {
+    .containerRight {
+    margin-left: 15px;
+    }
+    .loginImg {
+        visibility: hidden;
+    }
 }
