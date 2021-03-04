@@ -33,11 +33,6 @@ Post.init(
       type: DataTypes.TEXT,
       allowNull: true,
     },
-    votes: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      values: "0",
-    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

@@ -12,7 +12,6 @@ router.get("/", (req, res) => {
       "category",
       "time",
       "url",
-      "votes",
       "created_at",
     ],
     include: [
@@ -72,7 +71,6 @@ router.get("/post/:id", (req, res) => {
       "category",
       "time",
       "url",
-      "votes",
       "created_at",
     ],
     include: [

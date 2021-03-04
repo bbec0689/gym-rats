@@ -2,13 +2,35 @@
     {{#each posts as | post|}}
 
     <div class="post-homepage">
-        {{> post-info post }}
-        Upvote: <span class="sprite vote"> </span>
+        <div class="dashboard-posts">
+            <div class="backgroundContainer">
+                <div class="postContainer">
+                    <div class="d-flex flex-column">
+                        {{> post-info post }}
+                        <div class="btn-group voteBtns">
+                            <button type="button" class="btn btnCat btn-default" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-arrow-up glyphicon-align-left"
+                                    aria-hidden="true"></span>
+                            </button>
+                            {{!-- <button type="button" class="btn btnCat btnArrowUp btn-default"
+                                aria-label="Right Align">
+                                <span class="glyphicon glyphicon-arrow-down glyphicon-align-right"
+                                    aria-hidden="true"></span>
+                            </button> --}}
+
+                            <button href="/post/{{id}}" class="btn btnCat btn-default"
+                                aria-label="Left Align">Comments</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     {{else}}
     {{#if loggedIn}}
-    <h2><a href="/dashboard">Write</a> the first blog post!</h2>
+    <h2><a href="/create-post">Write</a> the first blog post!</h2>
     {{else}}
     <h2>There are no blog posts yet! <a href="/login">Login</a> or <a href="/signup">sign-up</a> to write the first one!
     </h2>
