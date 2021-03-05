@@ -1,6 +1,6 @@
 <article class="post">
     <div class="title">
-        <div class="p-2 ">
+        <div class="p-2">
 
             <a href="#" class=" btn d-flex flex-row-reverse" role="button">
             </a>
@@ -27,13 +27,11 @@
     {{!-- <div>
         Time: {{time}}
     </div> --}}
-
-    </div>
     <div class="meta">
         Written by {{user.username}} on
         {{format_date created_at}}
         |
-        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        <a href="/post/{{post.id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
     </div>
 
 </article>

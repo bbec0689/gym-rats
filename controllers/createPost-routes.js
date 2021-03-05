@@ -83,7 +83,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
       const post = dbPostData.get({ plain: true });
 
       // pass data to template
-      res.render("edit-post", {
+      res.render("create-post", {
         post,
         loggedIn: true,
       });
