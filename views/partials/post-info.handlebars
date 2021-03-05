@@ -1,0 +1,39 @@
+<article class="post">
+    <div class="title">
+        <div class="p-2 ">
+
+            <a href="#" class=" btn d-flex flex-row-reverse" role="button">
+            </a>
+            <h4 class="catClass font-cool">Category: {{category}}</h4>
+            <br>
+            <span>
+                <p class="d-flex flex-row catClass font-cool"><a href="/post/{{id}}">Title: {{title}}</a></p>
+            </span>
+
+
+        </div>
+        <p>
+            Workout:
+        </p>
+        <div class="postBox">
+
+            <div class="p-2">{{content}}</div>
+        </div>
+        <div class="yLink">
+            <div class="p-2 text-center">{{url}}</div>
+        </div>
+
+    </div>
+    {{!-- <div>
+        Time: {{time}}
+    </div> --}}
+
+    </div>
+    <div class="meta">
+        Written by {{user.username}} on
+        {{format_date created_at}}
+        |
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
+
+</article>

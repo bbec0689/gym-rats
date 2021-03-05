@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS gym_rat_db;
+
+CREATE DATABASE gym_rat_db;
