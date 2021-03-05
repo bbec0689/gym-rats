@@ -1,84 +1,53 @@
 <article>
     <a href="/dashboard"> &larr; Back to dashboard</a>
-    <h2>
+    <h2 class="catClass fontGeneral backgroundContainer text-center">
         Edit Blog Post
     </h2>
-    {{!-- <form class="edit-post-form">
-        <div>
-            <h3>Title</h3>
-            <input name="post-title" type="text" value="{{post.title}}" />
-        </div>
-        <div>
-            <h3>Post Time</h3>
-            <input name="post-time" type="text" value="{{post.time}}" />
-        </div>
-        <div>
-            <h3>Post URL</h3>
-            <input name="post-url" type="text" value="{{post.url}}" />
-        </div>
-        <div>
-            <h3>Post Category</h3>
-            <input name="post-category" type="text" value="{{post.category}}" />
-        </div>
-        <div>
-            <h3>Body</h3>
-            <textarea name="post-body" type="text" value="{{post.content}}">{{post.content}}</textarea>
-        </div>
-        <div>
-            Written by you on {{format_date post.created_at}}
-            |
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-        </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
-    </form> --}}
-    <div class="container2 card cardPost h-100 row align-items-center">
-        <div class="row justify-content-center">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <form class="edit-post-form">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon"></i>Title:</span>
-                            <input id="post-title" name="post-title" placeholder="Title here..." class="form-control"
-                                type="text" value="{{post.title}}">
-                        </div></br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon"></i>Time:</span>
-                            <input id="post-time" name="post-time" placeholder="Estimated Workout Time here..."
-                                class="form-control" type="number" value="{{post.time}}" />
-                        </div></br>
 
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon"></i>Category:</span>
-                            <input id="post-category" name="post-category" placeholder="Category here..."
-                                class="form-control" type="text" value="{{post.category}}">
-                        </div></br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon"></i></span>
-                            <textarea id="post-body" class="postArea form-control" rows="10" name="post-body"
-                                placeholder="Type your post here..." class="form-control" type="text"
-                                value="{{post.content}}"></textarea>
-                        </div></br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon"></i>Youtube Link:</span>
-                            <input id="post-url" name="post-url" placeholder="Post your video link here..."
-                                class="form-control" type="text" value="{{post.url}}">
-                        </div></br>
-                        <button type="submit" class="btn btn-lg btn-primary btn-block forgotPass">Save post</button>
+    <div class="postContainer backgroundContainer postStyle">
+        <div class="d-flex flex-column justify-content-center">
+            <form class="edit-post-form">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon"></i>Title:</span>
+                    <input id="post-title" name="post-title" placeholder="Title here..." class="form-control"
+                        type="text" value="{{post.title}}">
+                </div></br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon"></i>Time:</span>
+                    <input id="post-time" name="post-time" placeholder="Estimated Workout Time here..."
+                        class="form-control" type="number" value="{{post.time}}" />
+                </div></br>
 
-                    </form>
-                    <form class="comment-form">
-                        <div>
-                            <textarea name="comment-body"></textarea>
-                        </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon"></i>Category:</span>
+                    <input id="post-category" name="post-category" placeholder="Category here..." class="form-control"
+                        type="text" value="{{post.category}}">
+                </div></br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon"></i></span>
+                    <textarea id="post-body" class="postArea form-control" rows="10" name="post-body"
+                        placeholder="Type your post here..." class="form-control" type="text"
+                        value="{{post.content}}"></textarea>
+                </div></br>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon"></i>Youtube Link:</span>
+                    <input id="post-url" name="post-url" placeholder="Post your video link here..." class="form-control"
+                        type="text" value="{{post.url}}">
+                </div></br>
+                <button type="submit" class="btn btn-lg btn-primary btn-block forgotPass">Save post</button>
 
-                        <div>
-                            <button class="btn btn-lg btn-primary btn-block forgotPass" type="submit">add
-                                comment</button>
-                        </div>
-                    </form>
+            </form>
+            {{!-- <form class="comment-form">
+                <div>
+                    <textarea name="comment-body"></textarea>
                 </div>
-            </div>
+
+                <div>
+                    <button class="btn btn-lg btn-primary btn-block forgotPass" type="submit">add
+                        comment</button>
+                </div>
+                {{> comments post.comments}}
+            </form> --}}
         </div>
     </div>
 </article>
@@ -93,7 +62,7 @@
     </div>
 </form> --}}
 
-{{> comments post.comments}}
+
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
