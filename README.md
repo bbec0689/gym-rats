@@ -1,4 +1,4 @@
-# README Generator
+# Gym Rats
 
   ## Table of Contents
 
